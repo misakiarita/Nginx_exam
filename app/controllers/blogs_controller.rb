@@ -63,7 +63,7 @@ class BlogsController < ApplicationController
       @blog = Blog.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Only allow a list of trusted parameters through.A
     def blog_params
       params.require(:blog).permit(:title, :content)
     end
